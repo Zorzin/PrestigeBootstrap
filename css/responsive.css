@@ -161,6 +161,10 @@
 	.features img {
 	  margin-bottom: 35px;
 	}
+	.icon
+	{
+		margin: 27.5px;
+	}
 	.features i.fa {
 	  font-size: 20px;
 	  width: 80px;

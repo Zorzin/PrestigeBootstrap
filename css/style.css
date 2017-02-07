@@ -44,7 +44,7 @@ h2{
 }
 /*header area*/
 .top-header{
-	background:transparent;
+	background: #18171D;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -68,7 +68,7 @@ h2{
   margin-bottom: 0;
 }
 .nav-bar{
-	margin-top: 28px;
+	margin-top: 6px;
 	transition: all .7s ease 0s;
 	-webkit-transition: all .7s ease 0s;
 	-moz-transition: all .7s ease 0s;
@@ -109,7 +109,7 @@ ul.nav{
 
 /*banner area*/
 .banner{
-	background: url(../img/main.jpg);
+	background: url(../img/banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
@@ -200,7 +200,7 @@ ul.nav{
 .features p{
 	font-size: 18px;
 	color: #999999;
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 }
 /*details area*/
 .details{
@@ -444,7 +444,6 @@ ul.nav{
 .contact{
 	background: #ededed;
 	position: relative;
-	height: 700px;
 }
 .contact-heading img{
 	margin: auto;
@@ -464,7 +463,6 @@ ul.nav{
 	background: #15141a;
 	overflow: hidden;
 	z-index: 222;
-	position: absolute;
 	margin-top: 50px;
 }
 .contact-form-left, .contact-form-right{
@@ -634,4 +632,22 @@ ul.nav{
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+.offer
+{
+	margin-top: 50px;
+}
+
+.offer h3{
+	height: 80px;
+}
+
+.formOutput
+{
+	text-decoration:none;
+	border: none;
+	height: 100px;
+	width: 100%;
+	color: white;
 }

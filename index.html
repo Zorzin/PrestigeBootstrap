@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>LUCID | HTML5 Responsive App Landing Page</title>
+	<title>PRESTIGE</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
@@ -13,6 +13,22 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
 	<script src="js/modernizr.js"></script>
+	<!-- Core CSS file -->
+	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
+
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		In the folder of skin CSS file there are also:
+		- .png and .svg icons sprite, 
+		- preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
+
+	<!-- Core JS file -->
+	<script src="photoswipe/photoswipe.min.js"></script> 
+
+	<!-- UI JS file -->
+	<script src="photoswipe/photoswipe-ui-default.min.js"></script> 
+
+
 	<!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
@@ -39,6 +55,7 @@
 					<nav class="navbar navbar-default">
 						<div class="container-fluid nav-bar">
 						    <div class="navbar-header">
+						        <li><a href="#home" class="navbar-brand">Prestige</a></li>
 						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						        <span class="sr-only">Toggle navigation</span>
 						        <span class="icon-bar"></span>
@@ -47,7 +64,6 @@
 						      </button>
 						    </div>
 						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						        <li><a href="#home" class="navbar-brand">Prestige</a></li>
 						      <ul class="nav navbar-nav navbar-right">
 						        <li><a href="#features">Oferta</a></li>
 						        <li><a href="#about">O firmie</a></li>
@@ -81,35 +97,55 @@
 			<div class="row">
 				<h4>oferta</h4>
 				<h2>Nasze usługi</h2>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/home.png" height="25px;" ></i>
-					<h3>Elewacje</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+				<div class="col-md-12 offer">
+					<div class="col-md-4 wow zoomIn animated ">
+						<i class="fa"><img class="icon" src="img/home.png" height="25px;" ></i>
+						<h3>Elewacje</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
+					<div class="col-md-4 wow zoomIn animated">
+						<i class="fa"><img class="icon" src="img/bath.png" height="25px;" ></i>
+						<h3>Łazienki</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
+					<div class="col-md-4 wow zoomIn animated">
+						<i class="fa"><img class="icon" src="img/paint.png" height="25px;" ></i>
+						<h3>Kompleksowe wykończenia wnętrz</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
 				</div>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/bath.png" height="25px;" ></i>
-					<h3>Łazienki</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-				</div>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/paint.png" height="25px;" ></i>
-					<h3>Kompleksowe wykończenia wnętrz</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-				</div>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/electro.png" height="25px;" ></i>
-					<h3>Instalacje elektryczne</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-				</div>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/furniture.png" height="25px;" ></i>
-					<h3>Meble pod zabudowę</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-				</div>
-				<div class="col-md-4 wow zoomIn animated">
-					<i class="fa"><img class="icon" src="img/others.png" height="25px;" ></i>
-					<h3>Inne</h3>
-					<p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+				<div class="col-md-12 offer">
+					<div class="col-md-4 wow zoomIn animated">
+						<i class="fa"><img class="icon" src="img/electro.png" height="25px;" ></i>
+						<h3>Instalacje elektryczne</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
+					<div class="col-md-4 wow zoomIn animated">
+						<i class="fa"><img class="icon" src="img/furniture.png" height="25px;" ></i>
+						<h3>Meble pod zabudowę</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
+					<div class="col-md-4 wow zoomIn animated">
+						<i class="fa"><img class="icon" src="img/others.png" height="25px;" ></i>
+						<h3>Inne</h3>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+						<p>- opis</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -166,53 +202,53 @@
 					<h2>Galeria</h2>
 				</div>
 				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building1.jpg" >
+					<div class="hovereffect thumbnail" id="elevations">
+						<img src="img/elevation.jpg" >
 						<div class="overlay">
-                			<h2>Zdjęcia 1</h2>
+                			<h2>Elewacje</h2>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building2.jpg" >
+					<div class="hovereffect thumbnail" id="baths">
+						<img src="img/bath.jpg" >
 						<div class="overlay">
-                			<h2>Zdjęcia 2</h2>
+                			<h2>Łazienki</h2>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building1.jpg" >
+					<div class="hovereffect thumbnail" id="inside">
+						<img src="img/insideroom.jpg" >
 						<div class="overlay">
-                			<h2>Zdjęcia 3</h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building2.jpg" >
-						<div class="overlay">
-                			<h2>Zdjęcia 4</h2>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building1.jpg" >
-						<div class="overlay">
-                			<h2>Zdjęcia 5</h2>
+                			<h2>Wnętrza</h2>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-md-6">
-					<div class="hovereffect thumbnail">
-						<img src="img/building2.jpg" >
+					<div class="hovereffect thumbnail" id="electrical">
+						<img src="img/electric.jpg" >
 						<div class="overlay">
-                			<h2>Zdjęcia 6</h2>
+                			<h2>Instalacje elektryczne</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="hovereffect thumbnail" id="furnitures">
+						<img src="img/furniture.jpg" >
+						<div class="overlay">
+                			<h2>Meble</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6">
+					<div class="hovereffect thumbnail" id="others">
+						<img src="img/other.jpg" >
+						<div class="overlay">
+                			<h2>Inne</h2>
 						</div>
 					</div>
 				</div>
@@ -225,7 +261,7 @@
 		<div class="container" >
 			<div class="row" style="margin-bottom: 50px;">
 				<div class="col-md-6 col-sm-6">
-					<p><span>Polub nas na FaceBook!</span></p>
+					<p><span>Polub nas na Facebook!</span></p>
 				</div>
 				<div class="col-md-6 col-sm-6" >
 					<div 
@@ -261,7 +297,7 @@
 				</div>
 				<div class="col-md-2 col-md-offset-2 col-xs-4 col-sm-4">
 					<i class="fa fa-map-marker"></i>
-					<p>16-100 Sokołka</p>
+					<p>16-100 Sokółka</p>
 					<p>ul. Sienkiewicza 1</p>
 				</div>
 				<div class="col-md-3 col-md-offset-2 col-xs-4 col-sm-4 clearfix">
@@ -270,17 +306,21 @@
 				</div>
 				<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
 					<article class="contact-form">
-						<form action="contact">
+						<form action="contact.php" method="POST" target="formOutput">
 							<div class="col-md-5 col-md-offset-1 contact-form-left">
-								<input class="name" type="text" placeholder="Imię">
-								<input class="email" type="email" placeholder="Email">
-								<input class="subject" type="text" placeholder="Temat">
+								<input id="name" name="name" class="name" type="text" placeholder="Imię">
+								<input id="email" name="email" class="email" type="email" placeholder="Email">
+								<input id="subject" name="subject" class="subject" type="text" placeholder="Temat">
 							</div>
 							<div class="col-md-5 contact-form-right text-right">
 								<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+								
 								<input type="submit" class="submit-btn" value="Wyślij">
 							</div>
+							<iframe name="formOutput" class="formOutput">
 						</form>
+						
+</iframe>
 					</article>
 				</div>
 			</div>
@@ -310,6 +350,81 @@
 		</div>
 	</footer>
 
+	<!-- Photoswipe -->
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe. 
+			It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides. 
+				PhotoSwipe keeps only 3 of them in the DOM to save memory.
+				Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div> 
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- /Photoswipe-->
+
+
+
+
+
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>
@@ -317,6 +432,128 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/wow.js"></script>
+
+	<script>
+		var pswpElement = document.querySelectorAll('.pswp')[0];
+
+		// build items array
+		var elevations = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		var baths = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		var inside = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		var electrical = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		var furniture = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		var others = [
+			{
+				src: 'https://placekitten.com/600/400',
+				w: 600,
+				h: 400
+			},
+			{
+				src: 'https://placekitten.com/1200/900',
+				w: 1200,
+				h: 900
+			}
+		];
+
+		// define options (if needed)
+		var options = {
+			// optionName: 'option value'
+			// for example:
+			index: 0 // start at first slide
+		};
+
+
+		$("#elevations").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, elevations, options);
+			gallery.init();
+		});
+		$("#baths").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, baths, options);
+			gallery.init();
+		});
+		$("#inside").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, inside, options);
+			gallery.init();
+		});
+		$("#electrical").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, electrical, options);
+			gallery.init();
+		});
+		$("#furnitures").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, furniture, options);
+			gallery.init();
+		});
+		$("#others").click(function(){
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, others, options);
+			gallery.init();
+		});
+
+		// Initializes and opens PhotoSwipe
+		
+	</script>
+
+
+
 	<script>
       function initMap() {
         var sokolka = {lat: 53.405902, lng: 23.500253};
