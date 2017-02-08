@@ -24,6 +24,8 @@
 
 	<!-- Core JS file -->
 	<script src="photoswipe/photoswipe.min.js"></script> 
+	<script src="photoswipe/photoswipe-flickr.js"></script> 
+	
 
 	<!-- UI JS file -->
 	<script src="photoswipe/photoswipe-ui-default.min.js"></script> 
@@ -155,8 +157,8 @@
 	<section class="details" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-xs-6 col-sm-6 wow slideInUp animated">
-					<img class="img-responsive" src="img/inside.jpg">
+				<div class="col-md-5 col-xs-6 col-sm-6 wow slideInUp animated thumbnail">
+					<img class="img-responsive" src="img/insideroom.jpg">
 				</div>
 				<div class="col-md-6 col-md-offset-1 col-xs-6 col-sm-6 wow slideInUp animated">
 					<h4>O firmie</h4>
@@ -436,6 +438,7 @@
 	<script>
 		var pswpElement = document.querySelectorAll('.pswp')[0];
 
+/*
 		// build items array
 		var elevations = [
 			{
@@ -514,38 +517,61 @@
 				h: 900
 			}
 		];
+		*/
 
-		// define options (if needed)
-		var options = {
-			// optionName: 'option value'
-			// for example:
-			index: 0 // start at first slide
-		};
+		
+			var galleryOptions = {
+				// optionName: 'option value'
+				// for example:
+				index: 0 // start at first slide
+			};
 
+			var flickrApiKey = '99e3eaeee5b85e1952ec84e24f00ee8a',
+			lastItemIndex;
+			gallerySetup = function(gallery) {
+						gallery.init();
+					};
 
 		$("#elevations").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, elevations, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, elevations, options);
+			gallery.init();*/
+
+				var elevationId = '72157678539401440';
+				photoswipeFlickr(flickrApiKey,elevationId, galleryOptions, gallerySetup);
 		});
 		$("#baths").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, baths, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, baths, options);
+			gallery.init();*/
+
+				var bathId = '72157678539341690';
+				photoswipeFlickr(flickrApiKey,bathId, galleryOptions, gallerySetup);
 		});
 		$("#inside").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, inside, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, inside, options);
+			gallery.init();*/
+			var insideId= '72157680099949775';
+				photoswipeFlickr(flickrApiKey,insideId, galleryOptions, gallerySetup);
 		});
 		$("#electrical").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, electrical, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, electrical, options);
+			gallery.init();*/
+
+			var electricalId = '72157678539396520';
+				photoswipeFlickr(flickrApiKey,electricalId, galleryOptions, gallerySetup);
 		});
 		$("#furnitures").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, furniture, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, furniture, options);
+			gallery.init();*/
+
+			var furnituresId = '72157680099920515';
+				photoswipeFlickr(flickrApiKey,furnituresId, galleryOptions, gallerySetup);
 		});
 		$("#others").click(function(){
-			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, others, options);
-			gallery.init();
+			/*var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, others, options);
+			gallery.init();*/
+
+			var othersId = '72157677959364672';
+				photoswipeFlickr(flickrApiKey,othersId, galleryOptions, gallerySetup);
 		});
 
 		// Initializes and opens PhotoSwipe
