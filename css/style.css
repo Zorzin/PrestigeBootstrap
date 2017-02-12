@@ -173,6 +173,11 @@ ul.nav{
 }
 
 /*features area*/
+
+.features
+{
+	margin-bottom: 50px;
+}
 .features img{
 	display: block;
 	margin-bottom: 50px;
@@ -704,4 +709,9 @@ ul.nav{
 {
 	margin-top: 0;
 	color: #008ed6;
+}
+
+.place h4
+{
+	margin-top: 0;
 }
