@@ -108,10 +108,14 @@ ul.nav{
 }
 
 /*banner area*/
+
+.underbanner
+{
+	background-color: black;
+}
 .banner{
-	background: url(../img/banner.jpg);
+	background: url(../img/banner/opcja3.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -449,7 +453,7 @@ ul.nav{
 	margin: auto;
 	margin-bottom: 50px;
 }
-.contact i.fa{
+.fasmall{
 	color: #008ed6;
 	font-size: 20px;
 	padding: 20px;
@@ -647,4 +651,51 @@ ul.nav{
 	height: 100px;
 	width: 100%;
 	color: white;
+}
+
+
+.btn-circle
+{
+	display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    background: #333;
+    color: #fff;
+}
+
+.btn-circle:hover,
+.btn-circle:active
+{
+	margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    background: #000;
+    color: #fff;
+}
+
+.btn-circle a
+{
+    color: #fff;
+}
+
+.offerlist p{
+	text-align: left;
+	margin-left: 30px;
 }
